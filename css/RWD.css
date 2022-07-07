@@ -1,0 +1,32 @@
+@media all and (max-width:499px){
+    .card{
+        flex-direction: column !important;
+        height: 600px;
+    }
+
+    .signUp-form {
+        width: 100% !important;
+        margin-top: 10px;
+    }
+    .img{
+        background-color: aqua;
+        width: 100% !important;
+    }
+
+    
+}
+
+@media all and (max-width:600px){
+
+    
+    .img{
+        height: 100%;
+    }
+}
+
+@media all and (max-width:1200px){
+    .signUp-form{
+        margin-top: 30px;
+    }
+
+}

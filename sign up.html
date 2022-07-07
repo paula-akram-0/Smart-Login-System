@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png">
+    <title>login system</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/RWD.css">
+</head>
+<body>
+    <div id="space-Login">
+    <div class="container  d-flex align-items-center vh-100 ">
+        <div class="card d-flex flex-row  w-100">
+            <div class="img w-50 ">
+                <img src="img/signIn.jpg" id="imgIn" width="100%"  alt="">
+                <img src="img/SignUp-img.jpg" id="imgUp" width="100%" alt="">
+            </div>
+            <div class="signUp-form w-50 d-flex flex-column justify-content-center align-items-center  " id="form">
+                <input type="text" onkeyup="validation2()"  id="NameInput" placeholder="enter your name" class="form-control w-50 rounded-pill mb-1  bg-transparent  text-white">
+                <span class="mb-3" id="text2"></span>
+                <input type="email" onkeyup="validation1()" id="EmailInput" placeholder="enter your email" class="form-control w-50 rounded-pill mb-1 bg-transparent text-white">
+                <span class="mb-3" id="text1"></span>
+                <input type="password" onkeyup="verifyPassLength()"  id="PasswordInput" placeholder="enter your password" class="form-control w-50 rounded-pill mb-1 bg-transparent  text-white">
+                <span class="mb-3" id="text5"></span>
+                <button id="sign-upBtn" onclick="signUp()"  class=" btn sign-up">Sign Up</button>
+                <button id="sign-inBtn" onclick="loginf()" class=" btn sign-up">Login</button>
+            <p id="chick" class="text-success"></p>
+            <div class="linkPage">
+                You have an account?
+                <button id="SigninLink" >Signin</button>
+                <button id="SignupLink" >Signup</button></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="welcomePage">
+        <nav class="navbar navbar-dark">
+            <div class="container navb w-100">
+              <a class="navbar-brand " href="#">SMART LOGIN</a>
+              <a href="#" target="_self" onclick="logout()" class="btn btn-outline-warning p-4">logout</a>
+            </div>
+            
+          </nav>
+    
+    
+    
+    <div class="container d-flex justify-content-center align-items-center vh-100 ">
+     <div class="box  text-center p-5">
+         <h1 class="text-warning" id="text"></h1>
+         
+     </div>
+    </div>
+
+    </div>
+    
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
